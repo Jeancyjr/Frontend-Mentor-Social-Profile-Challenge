@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: hsl(0, 0%, 8%);
+      font-family: 'Inter', sans-serif;
+      color: #fff;
+    }
+
+    #container {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .form-wrap {
+      background: hsl(0, 0%, 12%);
+      height: 650px;
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    img{
+      display: block;
+      margin: auto;
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+
+    .form-wrap h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .form-wrap h4 {
+      font-size: 15px;
+      color:hsl(75, 94%, 57%);
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .form-wrap p {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .form-wrap .form-group {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .form-wrap .form-group button {
+      width: 100%;
+      display: block;
+      background: hsl(0, 0%, 20%);
+      padding: 15px;
+      border: 1px solid hsl(0, 0%, 12%);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .form-wrap .form-group button:hover {
+      color:hsl(75, 94%, 57%);
+    }
+
+    .btn {
+      color:#fff;
+      font-weight: 600;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      margin-top: 10px;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+
+    /* Small Smartphone */
+    @media(max-width: 375px) {
+  
+      #container {
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+
+      .btn {
+        font-size: 13px;
+        color:#fff;
+        font-weight: 300;
+      }
+    }
+
+    /* Smartphone */
+    @media(min-width: 376px) and (max-width: 500px) {
+  
+      #container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 40px;
+      }
+
+      .btn {
+        font-size: 14px;
+        color:#fff;
+        font-weight: 300;
+      }
+    }
+
+    /* Tablet */
+    @media(min-width: 501px) and (max-width: 768px) {
+  
+      #container {
+        max-width: 650px;
+        margin: 100px auto;
+        padding: 80px;
+      }
+
+      .form-wrap p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .btn {
+        font-size: 16px;
+        color:#fff;
+        font-weight: 300;
+      }
+
+      .attribution { 
+        font-size: 13px; 
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    /* Widescreen */
+    @media(min-width: 769px) and (max-width: 1200px) {
+  
+      #container {
+        max-width: 750px;
+        margin: 90px auto;
+        padding: 150px;
+      }
+
+      .form-wrap p {
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .btn {
+        font-size: 18px;
+        color:#fff;
+        font-weight: 300;
+      }
+
+      .attribution { 
+        font-size: 15px; 
+        text-align: center;
+        margin-top: 50px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="form-wrap">
+      <img src="./assets/images/avatar-jessica.jpeg" alt="black model profile picture">
+      <h2>Jessica Randall</h2>
+      <h4>London, United Kingdom</h4>
+      <p>"Front-end developer and avid reader."</p>
+      <form>
+        <div class="form-group">
+          <button type="github" class="btn">GitHub</button>
+        </div>
+        <div class="form-group">
+          <button type="frontend-mentor" class="btn">Frontend Mentor</button>
+        </div>
+        <div class="form-group">
+          <button type="linkedin" class="btn">LinkedIn</button>
+        </div>
+        <div class="form-group">
+          <button type="twitter" class="btn">Twitter</button>
+        </div>
+        <div class="form-group">
+          <button type="instagram" class="btn">Instagram</button>
+        </div>
+      </form>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">JeancySr</a>.
+    </div>
+  </div>
+  
+</body>
+</html>
